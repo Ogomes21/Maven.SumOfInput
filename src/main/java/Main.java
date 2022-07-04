@@ -8,16 +8,17 @@ public class Main {
 //printing the sum of the numbers 1 to n
 
     public static void main(String[] args) {
-        Scanner userInput = new Scanner(System.in);
-        int n = userInput.nextInt();
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input number: ");
+
+        int userInput = input.nextInt();
         int sum = 0;
 
-        System.out.println("Enter an integer.");
+        for (int n = 1; n <= userInput; n++) {
 
-        for (n = 0; n <= userInput.nextInt(); n++) {
             sum += n;
         }
-
+        System.out.println(sum);
     }
 }
 
